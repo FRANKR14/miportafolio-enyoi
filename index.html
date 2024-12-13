@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de [Tu Nombre]</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Sección Hero -->
+    <header class="hero">
+        <div class="hero-content">
+            <!-- Foto de perfil -->
+            <div class="foto-perfil">
+                <img src="1001132167.jpg" alt="Foto de Frank" id="foto-perfil">
+            </div>
+            <!-- Texto de bienvenida -->
+            <div class="bienvenida">
+                <h1>Hola, soy Frank Romero</h1>
+                <p>Bienvenido a mi portafolio. Soy un estudiante de Desarrollo de Software el cual se encuentra aprendiendo de forma especializada para ser Full-Stack con mucha hambre de conocimiento.</p>
+                <button onclick="cambiarModo()">Cambiar Modo</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección de Proyectos -->
+    <section id="proyectos">
+        <h2>Mis Conocimientos</h2>
+        <div class="proyectos-grid">
+            <!-- Proyectos se agregarán aquí dinámicamente desde JavaScript -->
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form>
+            <input type="text" id="nombre" placeholder="Tu nombre" required>
+            <input type="email" id="email" placeholder="Tu correo" required>
+            <textarea id="mensaje" placeholder="Tu mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

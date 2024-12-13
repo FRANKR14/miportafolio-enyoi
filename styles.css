@@ -1,0 +1,166 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #f0f0f0;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: left;
+}
+
+/* Foto de perfil */
+.foto-perfil img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #333;
+}
+
+/* Texto de bienvenida */
+.bienvenida h1 {
+    font-size: 2rem;
+    margin: 0;
+    color: #333;
+}
+
+.bienvenida p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+.bienvenida button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.bienvenida button:hover {
+    background-color: #0056b3;
+}
+
+/* Sección de proyectos */
+#proyectos {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+#proyectos h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Estilos de los proyectos */
+.proyectos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.proyecto {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.proyecto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.proyecto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.proyecto h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 15px;
+}
+
+.proyecto p {
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Estilos de contacto */
+#contacto {
+    padding: 50px 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+#contacto form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#contacto input, #contacto textarea {
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#contacto button {
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contacto button:hover {
+    background-color: #218838;
+}
+
+/* Estilos de modo oscuro */
+body.modo-oscuro {
+    background-color: #333;
+    color: white;
+}
+
+body.modo-oscuro .hero {
+    background-color: #444;
+}
+
+body.modo-oscuro .bienvenida button {
+    background-color: #28a745;
+}
+
+body.modo-oscuro .bienvenida button:hover {
+    background-color: #218838;
+}
